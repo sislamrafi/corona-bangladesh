@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "11999992925",
+    "firebase_url": "https://corona-bangladesh.firebaseio.com",
+    "project_id": "corona-bangladesh",
+    "storage_bucket": "corona-bangladesh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:11999992925:android:dc54358c46b775b634c1b4",
+        "android_client_info": {
+          "package_name": "com.sislamrafi.corona"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "11999992925-l19uc43gotu373njcflm9314mb2pjmvr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sislamrafi.corona",
+            "certificate_hash": "248451b19829c6f06876df55440f52d6f4bb2bd7"
+          }
+        },
+        {
+          "client_id": "11999992925-25d2mca1gtknko84eki80h5n41rvnu4s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDi-r9Cd7OOrRu7frKu4QUy3qcqp_FILjk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "11999992925-7akq9bkakm654n3ecaarmlup70h7nkbk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

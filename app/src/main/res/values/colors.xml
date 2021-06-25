@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#2A3743</color>
+    <color name="colorAccent">#0E0E0E</color>
+    <color name="selectColor">#26C4FF</color>
+    <color name="whiteTextColor">#EEF4F4</color>
+    <color name="statusTab">#BFFFFFFF</color>
+    <color name="blackFont">#333333</color>
+    <color name="caseColor">#E8714A</color>
+    <color name="recoveredColor">#60BB69</color>
+    <color name="deathColor">#767676</color>
+    <color name="backgroundColor">#EEEEEE</color>
+    <color name="buttonColor">#1B859E</color>
+    <color name="lightTextColor">#B2B2B2</color>
+
+    <color name="sickColor">#F3DC0A</color>
+    <color name="affectedColor">#FF1717</color>
+    <color name="symptomsColor">#FA5DFF</color>
+</resources>
