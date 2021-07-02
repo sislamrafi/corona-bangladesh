@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.YouFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/tab_layout_bg"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/logout_button"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/account_logout"
+                    android:scaleType="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S Islam"
+                    android:layout_marginBottom="1dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:textColor="@color/blackFont"/>
+
+                <TextView
+                    android:id="@+id/gmail_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Gmail"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="@dimen/smallTextSize"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                android:id="@+id/NFPanel"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/tab_layout_bg"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="0dp">
+                <TextView
+                    android:id="@+id/NFtitle_panel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text=""
+                    android:textColor="@color/blackFont"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:fontFamily="@font/roboto_bold"/>
+                <TextView
+                    android:id="@+id/NFtext_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="No notice available now."
+                    android:textSize="@dimen/smallTextSize"
+                    android:textColor="@color/blackFont"
+                    android:autoLink="web"
+                    android:fontFamily="@font/roboto_bold"/>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/tab_layout_bg"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="0dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="সঠিক তথ্য দিয়ে ফর্ম টি পূরন করুন। মনে রাখবেন, আপনার একটি সঠিক তথ্য হয়ত একটি প্রান বাঁচাতে পারবে।\nআর আমাদের স্বেচ্ছাসেবক দল নির্দিষ্ট সময়ে (আমাদের স্টকে মালামাল আসলে) আপনার এলাকায় প্রয়োজনীয় দ্রব্যাদি নিয়ে পৌঁছে যাবে। এলাকা ও সময় নোটিশ বোর্ড এ জানিয়ে দেওয়া হবে।"
+                        android:textSize="@dimen/smallTextSize"
+                        android:textColor="@color/blackFont"
+                        android:fontFamily="@font/ben_sen_handwriting"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/tab_layout_bg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ben_sen_handwriting"
+                        android:text="(এই ফর্মটি দৈনিক একবার হলেও পূরন করুন)"
+                        android:textSize="@dimen/smallTextSize"
+                        android:textColor="@color/blackFont"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/ben_sen_handwriting"
+                            android:text="আপনি অথবা আপনার পরিবারের কেউ -"
+                            android:textColor="@color/blackFont"
+                            android:textSize="@dimen/smallTextSize"/>
+
+                        <RadioGroup
+                            android:id="@+id/family_group"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <RadioButton
+                                android:id="@+id/radioButtonSick"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ben_sen_handwriting"
+                                android:text="অসুস্থ?" />
+
+                            <RadioButton
+                                android:id="@+id/radioButtonSymptom"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ben_sen_handwriting"
+                                android:text="করোনা ভাইরাস এর লক্ষন প্রকাশ পেয়েছে?" />
+
+                            <RadioButton
+                                android:id="@+id/radioButtonAffected"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ben_sen_handwriting"
+                                android:text="করোনা পজেটিভ ধরা পড়েছে?" />
+
+                            <RadioButton
+                                android:id="@+id/radioButtonFine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ben_sen_handwriting"
+                                android:text="সবাই ঠিক আছে" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="আপনার কোন প্রতিবেশি কী -"
+                            android:textColor="@color/blackFont"
+                            android:textSize="@dimen/smallTextSize"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/ben_sen_handwriting"/>
+
+                        <RadioGroup
+                            android:id="@+id/neighbour_group"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <RadioButton
+                                android:id="@+id/radioButtonSick1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ben_sen_handwriting"
+                                android:text="অসুস্থ?" />
+
+                            <RadioButton
+                                android:id="@+id/radioButtonSymptom1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ben_sen_handwriting"
+                                android:text="করোনা ভাইরাস এর লক্ষন প্রকাশ পেয়েছে?" />
+
+                            <RadioButton
+                                android:id="@+id/radioButtonAffected1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ben_sen_handwriting"
+                                android:text="করোনা পজেটিভ ধরা পড়েছে?" />
+
+                            <RadioButton
+                                android:id="@+id/radioButtonFine1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ben_sen_handwriting"
+                                android:text="সবাই ঠিক আছে" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ben_sen_handwriting"
+                        android:text="*আপনার পরিচয় সর্বদা গোপন রাখা হবে।"
+                        android:textColor="@color/lightTextColor"/>
+
+                    <Button
+                        android:id="@+id/Submit"
+                        android:layout_width="150dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Submit"
+                        android:background="@color/buttonColor"
+                        android:layout_marginBottom="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tab_layout_bg"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ben_sen_handwriting"
+                        android:text="(এই ফর্মটি আপনার দ্রব্যাদি দরকার হলে তখন পূরন করুন)"
+                        android:textSize="@dimen/smallTextSize"
+                        android:textColor="@color/blackFont"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="আপনার ঘরে পর্যাপ্ত পরিমান খাদ্য মজুদ রয়েছে?"
+                            android:textColor="@color/blackFont"
+                            android:textSize="@dimen/smallTextSize"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/ben_sen_handwriting"/>
+
+                        <RadioGroup
+                            android:id="@+id/food_group"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <RadioButton
+                                android:id="@+id/radioButtonFoodYes"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ben_sen_handwriting"
+                                android:text="হ্যাঁ" />
+
+                            <RadioButton
+                                android:id="@+id/radioButtonFoodNo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ben_sen_handwriting"
+                                android:text="না" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="আপনার ঘরে ভাল হ্যান্ড স্যানিটাইজার (৭০% অ্যালকোহল যুক্ত) অথবা হেক্সাসল অথবা স্যাভলন আছে?"
+                            android:textColor="@color/blackFont"
+                            android:textSize="@dimen/smallTextSize"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/ben_sen_handwriting"/>
+
+                        <RadioGroup
+                            android:id="@+id/sanitizer_group"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <RadioButton
+                                android:id="@+id/radioButtonSanitYes"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ben_sen_handwriting"
+                                android:text="হ্যাঁ" />
+
+                            <RadioButton
+                                android:id="@+id/radioButtonSanitNo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ben_sen_handwriting"
+                                android:text="না" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ben_sen_handwriting"
+                        android:text="*আপনার পরিচয় সর্বদা গোপন রাখা হবে।"
+                        android:textColor="@color/lightTextColor"/>
+
+                    <Button
+                        android:id="@+id/Submit1"
+                        android:layout_width="150dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Submit"
+                        android:background="@color/buttonColor"
+                        android:layout_marginBottom="20dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>
